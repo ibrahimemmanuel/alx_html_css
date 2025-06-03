@@ -1,0 +1,95 @@
+/* General layout using Flexbox */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+main {
+  display: flex;
+  flex: auto;
+}
+
+/* Header and Footer Styling */
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+/* Main layout division */
+article {
+  flex: 2;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: white;
+  border-right: 1px solid #ddd;
+}
+
+aside {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+}
+
+/* Headings spacing */
+h1, h2, h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #222;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 0.6rem;
+  text-align: left;
+}
+
+/* Unordered list for sample projects */
+ul {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
