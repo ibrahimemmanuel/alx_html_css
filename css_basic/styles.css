@@ -1,3 +1,13 @@
+:root {
+  --main-bg-color: #ffffff;
+  --sidebar-bg-color: #f0f0f0;
+  --header-footer-bg: #333;
+  --header-footer-text: #ffffff;
+  --main-text-color: #222;
+  --border-color: #ddd;
+  --padding-base: 1.5rem;
+}
+
 /* General layout using Flexbox */
 body {
   display: flex;
@@ -11,13 +21,15 @@ body {
 main {
   display: flex;
   flex: auto;
+  gap: 1.5rem; /* spacing between article and aside */
+  padding: var(--padding-base); /* internal padding for main */
 }
 
 /* Header and Footer Styling */
 header, footer {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-text);
+  padding: var(--padding-base);
 }
 
 header ul {
@@ -30,7 +42,7 @@ header ul {
 
 header a {
   color: white;
-  text-decoration: none;
+  text-decoration: white;
 }
 
 footer a {
@@ -41,24 +53,27 @@ footer a {
 /* Main layout division */
 article {
   flex: 2;
-  padding: 1.5rem;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: var(--padding-base);
   overflow-y: auto;
-  background-color: white;
-  border-right: 1px solid #ddd;
 }
 
 aside {
   flex: 1;
-  padding: 1.5rem;
+  background-color: var(--sidebar-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: var(--padding-base);
   overflow-y: auto;
-  background-color: #f0f0f0;
 }
 
 /* Headings spacing */
 h1, h2, h3 {
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
-  color: #222;
+  color: var(--main-text-color);
 }
 
 /* Paragraphs */
@@ -75,7 +90,7 @@ table {
 }
 
 table, th, td {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
 }
 
 th, td {
