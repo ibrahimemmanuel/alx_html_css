@@ -1,0 +1,237 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Banner */
+.banner {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.banner p {
+  font-size: 20px;
+  color: #666;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.quote-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote blockquote {
+  font-size: 24px;
+  font-style: italic;
+  color: #333;
+  margin: 0 auto 10px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.quote-author {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Videos Section */
+.videos {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.video-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.video-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Membership Section */
+.membership {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.membership-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.membership-card:hover {
+  transform: translateY(-10px);
+}
+
+.membership-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.membership-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  color: #2a9d8f;
+}
+
+.btn {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #21867a;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq-item {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  text-align: left;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.answer {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #eee;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.footer-nav a {
+  color: #aaa;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}

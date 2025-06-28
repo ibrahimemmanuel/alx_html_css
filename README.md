@@ -1,3 +1,4 @@
+HEAD
 # Headphones Landing Page
 
 This project is part of the **ALX Front-End Curriculum** — Week 7.
