@@ -1,0 +1,81 @@
+/* Base Reset & Font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Layout containers */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+/* Header and Footer */
+header, footer {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+/* Navigation */
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+header a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
